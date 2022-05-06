@@ -1,0 +1,190 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - todays_schedule
+  - HW_remaining
+  - togym
+  - name_workout
+  - workout_schedule
+  - biceps_workout
+  - triceps_workout
+  - chest_workout
+  - back_workout
+  - shoulder_workout
+  - legs_workout
+  - info_population
+  - name_location
+  - info_uni
+  - uni_name
+  - want_bmi
+  - bmigetheight_input
+  - weight_input
+  - bmiresult
+  - greet_omi
+  - omi_reply
+  - dietplan
+  - givecaloriesfood
+  - enterfoodname
+  - request_detail
+  - pushpulllegs
+  - workoutdescription
+  - storedatabase
+entities:
+- muscles
+- weight
+- height
+- pushpull
+- description
+slots:
+  muscles:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: muscles
+  height:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: height
+  weight:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: weight
+  pushpull:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: pushpull
+  description:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: description
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on! How can I help you?"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_todays_schedule:
+  - text: "My todays schedule is 2hrs HW 2hrs Gym 1hr Jogging 8hrs Sleep 10hrs Study 2hrs chill with Friends"
+
+  utter_HW_remaining:
+  - text: "I have 252 Chatbot 3 quizes 1 255 Assignment 2 257 Assignment prject 1 and 1 ISE 201 Project due thursday"
+
+  utter_togym:
+  - text: "what workout you will be doing now?"
+
+  utter_workout_name:
+  - text: "So today is {muscles}"
+
+  utter_workout_schedule:
+  - text: "Monday: Push, Tuesday: Pull, Wednesday: Legs, Thursday: Push, Friday: Pull, Saturday: Legs, Sunday: Rest."
+
+  utter_biceps_workout:
+  - text: "1)Dumbell Curl  2)Barbell Curl 3)Hammer curl 4)Prechair 4sets (20lbs, 40lbs, 60lbs, 80lbs)"
+
+  utter_triceps_workout:
+  - text: "1)overhead dumbbell tricep extensions  2)skull crusher 3)Rope Pushdowns. 4)Bar Pushdowns 4sets (20lbs, 40lbs, 60lbs, 80lbs)"
+
+  utter_chest_workout:
+  - text: "1)dumbell press flat  2)dumbell press incline 3) dumbell fly incline 4)peg fly machine 4sets (60lbs, 80lbs, 100lbs, 120lbs)"
+
+  utter_back_workout:
+  - text: "1)Deadlifts  2)barbell rows 3)lat pulldown 4)Pullups 4sets"
+
+  utter_shoulder_workout:
+  - text: "1)miltary dumbell press  2)miltary barbell press 3)lateral raises 4)shrugs 4sets"
+
+  utter_legs_workout:
+  - text: "1)Squats free  2)weighted squats 3)Lunges 4)leg press 4sets"
+
+  utter_popu:
+  - text: "which state population you need?"
+
+  utter_loc:
+  - text: "the population of the location is {temp}"
+
+  utter_uni:
+  - text: "Name the country of which you need university names:"
+
+  utter_uniname:
+  - text: "the names of university is {temp}"
+
+  utter_bmiwantresponse:
+  - text: "enter height in meter and, weight in kg"
+
+  utter_bmigetheight_input:
+  - text: "your height is {height}"
+
+  utter_weight_input:
+  - text: "your weight is {weight}"
+
+  utter_bmiresult:
+  - text: "Your result is: {temp}"
+
+  utter_greet_omi:
+  - text: "Hello I am bot I am good"
+
+  utter_omi_reply:
+  - text: "High sir!!!!!"
+
+  utter_dietplan:
+  - text: "your morning meal 200 ml milk + whey 4 eggs 1 paratha 50g oat 10 nuts lunch 3 chapati and vegetables evening 4 eggs 200ml milk+ whey dinner 3 chapati + 100g chicken" 
+
+  utter_givecaloriesfood:
+  - text: "which food calories you want?"
+
+  utter_caloriesresult:
+  - text: "The food {temp}"
+
+  utter_requestdetail:
+  - text: "Please provide your todays workout"
+
+  utter_pushpulllegs:
+  - text: "Please provide your todays workout Description"
+
+  utter_workoutdescription:
+  - text: "These are the values that you provided do you want to store"
+
+  utter_Done:
+  - text: "Done!!!!"
+
+
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+actions:
+- action_demograph_api
+- action_uniname_api
+- action_bmi_api
+- action_calories_api
+- action_pushpull
+- action_description
+- action_store
