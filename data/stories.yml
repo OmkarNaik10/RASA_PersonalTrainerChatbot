@@ -1,0 +1,82 @@
+version: "3.1"
+
+stories:
+
+- story: Health
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+  - intent: todays_schedule
+  - action: utter_todays_schedule
+  - intent: HW_remaining
+  - action: utter_HW_remaining
+  - intent: togym
+  - action: utter_togym  
+  - intent: name_workout
+    entities: 
+      - muscles  
+  - action: utter_workout_name
+  - intent: workout_schedule
+  - action: utter_workout_schedule  
+  - intent: biceps_workout
+  - action: utter_biceps_workout
+  - intent: triceps_workout
+  - action: utter_triceps_workout
+  - intent: chest_workout
+  - action: utter_chest_workout
+  - intent: back_workout
+  - action: utter_back_workout
+  - intent: shoulder_workout
+  - action: utter_shoulder_workout
+  - intent: legs_workout
+  - action: utter_legs_workout
+  - intent: info_population
+  - action: utter_popu
+  - intent: name_location
+  - action: action_demograph_api
+  - intent: info_uni
+  - action: utter_uni
+  - intent: uni_name
+  - action: action_uniname_api
+  - intent: want_bmi
+  - action: utter_bmiwantresponse
+  - intent: bmigetheight_input
+    entities:
+      - height
+  - action: utter_bmigetheight_input
+  - intent: weight_input
+    entities:
+      - weight
+  - action: utter_weight_input
+  - intent: bmiresult
+  - action: action_bmi_api
+  - intent: dietplan
+  - action: utter_dietplan
+  - intent: givecaloriesfood
+  - action: utter_givecaloriesfood
+  - intent: enterfoodname
+  - action: action_calories_api
+  - intent: request_detail
+  - action: utter_requestdetail
+  - intent: pushpulllegs
+    entities:
+      - pushpull: "pushworkout"
+  - action: action_pushpull
+  - intent: workoutdescription
+    entities:
+      - description: "heavyweight"
+  - action: action_description
+  - intent: storedatabase
+  - action: action_store
+
+
+- story: Omithecoder
+  steps:
+  - intent: greet_omi
+  - action: utter_greet_omi
+  - intent: omi_reply
+  - action: utter_omi_reply
+  - intent: mood_unhappy
+  - action: utter_cheer_up

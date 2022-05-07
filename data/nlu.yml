@@ -1,0 +1,304 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: todays_schedule
+  examples: |
+    - I want my todays schedule
+    - give me my todays schedule
+    - whats my schedule
+    - todays plan
+    - todays schedule
+
+- intent: HW_remaining
+  examples: |
+    - My HW and study plan?
+    - what is my HW?
+    - Assignment?
+    - Homework?
+    - Study Plan?
+
+- intent: togym
+  examples: |
+    - I am planning to go for gym workout
+    - gym workout
+    - going for gym workout
+    - go to gym for workout
+    - going to hit gym today
+
+- intent: name_workout
+  examples: |
+    - I am planning to do [chest](muscles)
+    - I am planning to do [triceps](muscles)
+    - planning to do [traps](muscles)
+    - to do [triceps](muscles)
+    - work on [lowback](muscles)
+    - to do [legs](muscles)
+    - planning to do [back](muscles)
+    - planning to do [hamstring](muscles)
+    - planning to do [shoulder](muscles)
+    - planning to do [pull](muscles)
+    - planning to do [push](muscles)
+
+- intent: workout_schedule
+  examples: |
+    - Give me my workout schedule
+    - my workout schedule
+    - what is my workout schedule
+    - workout schedule
+    - How is my workout schedule
+
+- intent: biceps_workout
+  examples: |
+    - bicep-workout plan
+    - bicep-variation
+    - bicep-exercise
+    - bicep-variation
+    - bicep-workout plan
+
+- intent: triceps_workout
+  examples: |
+    - tricep-workout
+    - tricep-exercises
+    - what tricep-exercise I am training?
+    - tricep-variation
+    - tricep-workout
+
+- intent: chest_workout
+  examples: |
+    - chest-workout
+    - chest-exercises
+    - what chest-exercise I am training?
+    - chest-variation
+    - chest-workout
+
+- intent: back_workout
+  examples: |
+    - back-workout plan?
+    - back-variation
+    - what are back-exercises
+    - back-variation
+    - back-workout plan
+
+- intent: shoulder_workout
+  examples: |
+    - shoulder-workout plan?
+    - shoulder-variation
+    - what are shoulder-exercises
+    - shoulder-variation
+    - shoulder-workout plan
+
+- intent: legs_workout
+  examples: |
+    - legs-workout plan?
+    - legs-variation
+    - what are legs-exercises
+    - legs-variation
+    - legs-workout plan
+
+- intent: info_population
+  examples: |
+    - I want the state population
+    - what is the state population
+    - want the state population
+    - state population
+
+- intent: name_location
+  examples: |
+    - California
+    - Alabama
+    - Georgia
+    - Minnesota
+    - New York
+
+- intent: info_uni
+  examples: |
+    - I want some names of university
+    - names of university
+    - want some names of university
+    - some names of university
+
+- intent: uni_name
+  examples: |
+    - United States
+    - USA
+    - US
+    - IN
+    - India
+
+- intent: want_bmi
+  examples: |
+    - I want my bmi
+    - want my bmi
+    - give me my bmi
+    - result of my bmi
+    - how do I get my bmi
+
+- intent: bmigetheight_input
+  examples: |
+    - my height in meter is [1.75](height)
+    - my height is [1.85](height)
+    - height is [1.8](height)
+    - so my height is [1.77](height)
+    - [1.75](height)
+    - [1.73](height)
+
+- intent: weight_input
+  examples: |
+    - my weight in kg is [60](weight)
+    - my weight is [62](weight)
+    - weight is [65](weight)
+    - so my weight is [64](weight)
+    - [60](weight)
+    - [62](weight)
+
+- intent: bmiresult
+  examples: |
+    - do you think I am fit
+    - do I look fit
+    - I am fit
+    - say something related to my fitness 
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: greet_omi
+  examples: |
+    - Hey omi ssup
+    - Hello omi how are you?
+    - Hey omi how you feeling?
+    - ssup omi
+
+- intent: omi_reply
+  examples: |
+    - Hows the josh omi
+    - Hows the power
+    - Hows life
+    - Hows the josh
+
+- intent: dietplan
+  examples: |
+    - give me my diet plan
+    - my diet plan
+    - diet plan
+    - whats my diet plan
+
+- intent: givecaloriesfood
+  examples: |
+    - I want total calories of food
+    - total calories of food
+    - calories of food
+    - calories of food
+
+- intent: enterfoodname
+  examples: |
+    - 1 large mango
+    - 1 large apple
+    - 1 large banana
+    - 1 large tomatoes
+
+- intent: request_detail
+  examples: |
+    - I want to fill my todays workout detail
+    - fill my todays workout detail
+    - I want to track my todays workout details
+    - my todays workout detail
+
+- intent: pushpulllegs
+  examples: |
+    - my exercise todays [pushworkout](pushpull)
+    - my exercise todays [pullworkout](pushpull)
+    - my exercise todays [legsworkout](pushpull)
+    - todays exercise [pushworkout](pushpull)
+    - todays exercise [pullworkout](pushpull)
+    - todays exercise [legsworkout](pushpull)
+
+- intent: workoutdescription
+  examples: |
+    - exercise [heavyweight](description)
+    - exercise [lightweight](description)
+    - exercise [bodyweight](description)
+    - exercise [resistance](description)
+
+- intent: storedatabase
+  examples: |
+    - yes I want to store my information
+    - yes store my current information
+    - yes store info
+    - yes dump the info
+
