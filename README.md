@@ -4,7 +4,9 @@
 
 
 Done API calls that give your Maintenance calories TDEE  based on your lifestyle.
+
 Done Database Connection That stores your Goals such as PR and Workout.
+
 Done Slack Deployment.
 
 
