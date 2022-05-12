@@ -13,6 +13,7 @@ Done Slack Deployment.
 
 Conversational Flow:
 
+# Step1:
   - intent: greet
 
     - hey
@@ -31,7 +32,7 @@ Conversational Flow:
 
 
 
-
+# Step2:
   - intent: mood_great
 
     - perfect
@@ -49,6 +50,7 @@ Conversational Flow:
     - so good
     - so perfect
 
+# Step3:
   - intent: todays_schedule
 
     - I want my todays schedule
@@ -57,7 +59,7 @@ Conversational Flow:
     - todays plan
     - todays schedule
 
-
+# Step4:
   - intent: HW_remaining
 
     - My HW and study plan?
@@ -67,6 +69,7 @@ Conversational Flow:
     - Study Plan?
 
 
+# Step5:
   - intent: togym
 
     - I am planning to go for gym workout
@@ -75,6 +78,7 @@ Conversational Flow:
     - go to gym for workout
     - going to hit gym today
 
+# Step6:
   - intent: name_workout
     - I am planning to do chest
     - I am planning to do triceps
@@ -89,6 +93,7 @@ Conversational Flow:
     - planning to do push
 
 
+# Step7:
   - intent: workout_schedule
 
     - Give me my workout schedule
@@ -97,6 +102,7 @@ Conversational Flow:
     - workout schedule
     - How is my workout schedule  
 
+# Step8:
   - intent: biceps_workout
 
     - bicep-workout plan
@@ -105,6 +111,7 @@ Conversational Flow:
     - bicep-variation
     - bicep-workout plan
   
+  # Step9:
   - intent: triceps_workout
 
     - tricep-workout
@@ -113,6 +120,7 @@ Conversational Flow:
     - tricep-variation
     - tricep-workout
  
+ # Step10:
   - intent: chest_workout
 
     - chest-workout
@@ -121,6 +129,7 @@ Conversational Flow:
     - chest-variation
     - chest-workout
  
+ # Step11:
   - intent: back_workout
 
     - back-workout plan?
@@ -129,6 +138,7 @@ Conversational Flow:
     - back-variation
     - back-workout plan
  
+ # Step12:
   - intent: shoulder_workout
 
     - shoulder-workout plan?
@@ -137,6 +147,7 @@ Conversational Flow:
     - shoulder-variation
     - shoulder-workout plan
   
+  # Step13:
   - intent: legs_workout
 
     - legs-workout plan?
@@ -145,6 +156,7 @@ Conversational Flow:
     - legs-variation
     - legs-workout plan
  
+ # Step14:
   - intent: info_population
 
     - I want the state population
@@ -152,6 +164,7 @@ Conversational Flow:
     - want the state population
     - state population
 
+# Step15:
   - intent: name_location
 
     - California
@@ -159,7 +172,8 @@ Conversational Flow:
     - Georgia
     - Minnesota
     - New York
- 
+
+# Step16:
   - intent: info_uni
 
     - I want some names of university
@@ -167,6 +181,7 @@ Conversational Flow:
     - want some names of university
     - some names of university
 
+# Step17:
   - intent: uni_name
 
     - United States
@@ -175,6 +190,7 @@ Conversational Flow:
     - IN
     - India
 
+# Step18:
   - intent: want_bmi
 
     - I want my bmi
@@ -183,6 +199,7 @@ Conversational Flow:
     - result of my bmi
     - how do I get my bmi
   
+  # Step19:
   - intent: bmigetheight_input
 
     - my height in meter is 1.75
@@ -192,6 +209,7 @@ Conversational Flow:
     - 1.75
     - 1.73
 
+# Step20:
   - intent: weight_input
 
     - my weight in kg is 60
@@ -201,6 +219,7 @@ Conversational Flow:
     - 60
     - 62
 
+# Step21:
   - intent: bmiresult
 
     - do you think I am fit
@@ -208,7 +227,7 @@ Conversational Flow:
     - I am fit
     - say something related to my fitness 
 
- 
+ # Step22:
   - intent: dietplan
 
     - give me my diet plan
@@ -216,6 +235,7 @@ Conversational Flow:
     - diet plan
     - whats my diet plan
  
+# Step23:
   - intent: givecaloriesfood
 
     - I want total calories of food
@@ -223,7 +243,7 @@ Conversational Flow:
     - calories of food
     - calories of food
 
-  
+ # Step24:
   - intent: enterfoodname
 
     - 1 large mango
@@ -231,7 +251,7 @@ Conversational Flow:
     - 1 large banana
     - 1 large tomatoes 
 
-
+# Step25:
   - intent: request_detail
 
     - I want to fill my todays workout detail
@@ -239,7 +259,7 @@ Conversational Flow:
     - I want to track my todays workout details
     - my todays workout detail
 
- 
+# Step26:
   - intent: pushpulllegs
 
     - my exercise todays pushworkout
@@ -249,6 +269,7 @@ Conversational Flow:
     - todays exercise pullworkout
     - todays exercise legsworkout
 
+# Step27:
   - intent: workoutdescription
 
     - exercise heavyweight
@@ -256,6 +277,7 @@ Conversational Flow:
     - exercise bodyweight
     - exercise resistance
 
+# Step28:
   - intent: storedatabase
 
     - yes I want to store my information
